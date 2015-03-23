@@ -1,0 +1,14 @@
+a {
+	color: $brand-primary;
+
+	&:hover {
+		color: darken($brand-primary,10%);
+	}
+	&:visited {
+		color: darken($brand-secondary,10%);
+	}
+	&:focus {
+		background-color: $highlight;
+		outline: 3px solid $highlight;
+	}
+}

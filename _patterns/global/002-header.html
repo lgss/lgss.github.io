@@ -1,0 +1,16 @@
+---
+title: Standard Header
+id: header
+---
+<!-- Begin .header -->
+<header role="banner">
+  <div class="container">
+    <div class="site-logo">
+      {{ site.patterns | where:"title" : "Logo" }}
+    </div>
+    <div class="site-search">
+      {{ site.patterns | where:"title" : "Search Form" }}
+    </div>
+  </div>
+</header>
+<!-- End .header -->

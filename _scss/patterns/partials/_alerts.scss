@@ -1,0 +1,24 @@
+.site-wide-alert {
+  @extend %small;
+  background:$brand-secondary;
+  color: $white;
+  vertical-align:middle !important;
+  padding: $base-font-size / 2;
+  margin-bottom: $base-font-size;
+
+  h2 {
+    color: $white;
+    margin:0;
+    padding:0;
+    font-size: $h3-font-size;
+    line-height: $h3-font-size*$base-line-height-ratio;
+  }
+  
+  i{
+    padding:0 10px 0 0;
+  }
+}
+
+.site-wide-alert__header {
+  margin-bottom: 1em;
+}

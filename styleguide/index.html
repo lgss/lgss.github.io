@@ -1,0 +1,20 @@
+---
+layout: default
+title: Styleguide
+permalink: /styleguide/
+---
+{% for pattern in site.patterns %}
+<div class="pattern" id="p-{{ pattern.id }}">
+  <header class="pattern__title">
+    <h3 class="title">{{ pattern.title }} <span>(View Code)</span></h3>
+    <i class=""></i>
+  </header>
+  <div class="code">
+    {% highlight html %}
+    {{ pattern.output }}
+    {% endhighlight %}
+  </div>
+  <p class="small-text">{{ pattern.description }}</p>
+  {{ pattern.output }}
+</div>
+{% endfor %}

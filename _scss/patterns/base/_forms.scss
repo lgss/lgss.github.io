@@ -1,0 +1,51 @@
+label, legend {
+  //display: block;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="week"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+input[type="color"],
+textarea,
+select {
+  border-width: 2px;
+  border-style: solid;
+  border-color: $brand-primary;
+  font-size: 16px; // magic number for iOS to not do stupid things to forms
+  line-height: 1;
+  //padding:8px;
+  margin: 0;
+  width: 100%;
+}
+
+fieldset {
+  padding: 0;
+  border: 0;
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+  }
+}
+
+.search {
+  width: 100%;
+  position: relative;
+
+  input[type="text"] {}
+  input[type="submit"] {}
+}
+
+input[type="text"].filter{
+  border-color:$geyser;
+}

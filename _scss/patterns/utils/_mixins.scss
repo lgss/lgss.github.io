@@ -1,0 +1,51 @@
+/**
+ * MIXINS
+ */
+
+
+/**
+ * Output uppercase with some letter spacing
+ *
+   `@include uppercase(0.1em);`
+ *
+ */
+@mixin uppercase($spacing: 0.1em){
+    text-transform: uppercase;
+    letter-spacing: $spacing;
+}
+
+
+/**
+ * Output vendor-prefixed rules
+ *
+   `@include prefix(border-radius, 4px);`
+ *
+ */
+@mixin prefix($property, $value...){
+    -webkit-#{$property}: $value;
+       -moz-#{$property}: $value;
+        -ms-#{$property}: $value;
+         -o-#{$property}: $value;
+            #{$property}: $value;
+}
+
+
+/**
+ * Output clearfix rules
+ *
+   `@include clearfix();`
+ *
+ */
+@mixin clearfix {
+    &:before,
+    &:after {
+        content: "";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+    zoom: 1;
+}
+
+

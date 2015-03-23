@@ -1,0 +1,35 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+// variables
+@import "variables";
+
+//utils
+@import "patterns/utils/placeholders";
+@import "patterns/utils/mixins";
+
+//base
+@import "patterns/base/normalize"; // reset things
+@import "patterns/base/reset"; // reset things
+@import "patterns/base/box-sizing"; // reset things
+@import "patterns/base/shared"; // reset things
+// @import "patterns/base/layout";
+@import "patterns/base/typography";
+@import "patterns/base/links";
+// @import "patterns/base/buttons";
+// @import "patterns/base/forms";
+
+//partials
+// @import "patterns/partials/alerts";
+// @import "patterns/partials/breadcrumbs";
+// @import "patterns/partials/callout";
+// @import "patterns/partials/footer";
+// @import "patterns/partials/navigation";
+// @import "patterns/partials/panels";
+// @import "patterns/partials/related-content";
+// @import "patterns/partials/story";
+// @import "patterns/partials/table";
+@import "patterns/partials/syntax-highlighting";
+
+// shame.scss
+@import "patterns/shame";

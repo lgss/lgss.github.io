@@ -1,0 +1,55 @@
+// brand colours for reference
+$ccc: #3e96d5;
+$ncc: #80217e;
+$hdc: #000;
+$nocc: #000;
+$nbc: #000;
+$nph: #000;
+$ocs: #000;
+
+// specify colors for site usage
+$brand-primary: $ccc;
+$brand-primary-lt: lighten($brand-primary,15%);
+$brand-secondary: $ncc;
+$brand-secondary-lt: lighten($brand-secondary,15%);
+
+// specify functional colors for actions
+$highlight: #FFBF47;
+$fail: #FFBF47;
+$success: #FFBF47;
+
+// specify 50 shades of grey
+$black: #1E1E1E; // don't use actual black
+$white: #fefefe; // don't use actual white
+$geyser: #DBE1E3; //primarily used on borders
+$ghost-gray: #F1F3F1; //primarily used on callouts
+$manatee: #9299A5; //Md. Grey
+$mine-shaft: #353535; //dark gray
+$whitesmoke: #EDF4F7; //whitesmoke
+
+
+
+/**
+ * Typography variables
+ */
+$base-font-size: 18px;
+$base-line-height-ratio: 1.4;
+$base-line-height: ceil($base-font-size*$base-line-height-ratio);
+
+$h1-font-size: $base-font-size*4;
+$h2-font-size: $base-font-size*2.6;
+$h3-font-size: $base-font-size*1.8;
+$h4-font-size: $base-font-size*1.125;
+$h5-font-size: $base-font-size*1;
+$h6-font-size: $base-font-size*0.85;
+
+$font-family: 'Helvetica',Tahoma, sans-serif;
+$font-family-alt: 'Helvetica',Tahoma,sans-serif;
+
+
+
+/**
+ * Grid and layout variables
+ */
+$max-page-width: 1026px;
+$base-spacing-unit: $base-line-height;

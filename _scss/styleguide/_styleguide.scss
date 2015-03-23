@@ -1,0 +1,94 @@
+/*------------------------------------*\
+    #STYLEGUIDE
+    Styles only used within the styleguide
+\*------------------------------------*/
+
+/**
+ * Pattern wrappers
+ */
+.pattern {
+	margin-bottom: 3em;
+}
+
+.pattern__title {
+	padding: $base-spacing-unit 0;
+	.title {
+		margin: 0;
+		span {
+			font-size: .5em;
+		}	
+	}
+}
+
+
+/**
+ * Color Swatches
+ */
+.sg-colors {
+	@include clearfix();
+	margin: 0;
+	list-style-type: none;
+}
+
+.sg-color {
+	float: left;
+	width: 50%;
+
+}
+
+.sg-swatch {
+	height: 4em;
+}
+
+.sg-label {
+	padding: .5em 0;
+}
+.sg-hex {
+	font-size: 80%;
+	font-style: italic;
+
+}
+
+.color-brand-primary {
+	background-color: $brand-primary;
+}
+.color-brand-primary-lt {
+	background-color: $brand-primary-lt;
+}
+.color-brand-secondary {
+	background-color: $brand-secondary;
+}
+.color-brand-secondary-lt {
+	background-color: $brand-secondary-lt;
+}
+.color-highlight {
+	background-color: $highlight;
+}
+.color-fail {
+	background-color: $fail;
+}
+.color-success {
+	background-color: $success;
+}
+.color-black {
+	background-color: $black;
+}
+.color-white {
+	background-color: $white;
+}
+.color-geyser {
+	background-color: $geyser;
+}
+.color-ghost-gray {
+	background-color: $ghost-gray;
+}
+.color-manatee {
+	background-color: $manatee;
+}
+.color-mine-shaft {
+	background-color: $mine-shaft;
+}
+.color-whitesmoke {
+	background-color: $whitesmoke;
+}
+
