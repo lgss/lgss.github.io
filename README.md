@@ -4,6 +4,15 @@
 
 // to be written
 
+To include
+* HTML
+* CSS
+* JavaScript
+* .NET
+* Sharepoint
+* Java
+* Version Control
+
 ## Using LGSS Styleguide
 
 
