@@ -1,7 +1,7 @@
 ---
 layout: post
 title: JavaScript
-permalink: /code-standards/javascript
+permalink: /code-standards/javascript/
 ---
 
 # JavaScript

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Sharepoint
-permalink: /code-standards/sharepoint
+permalink: /code-standards/sharepoint/
 ---
 
 # Sharepoint

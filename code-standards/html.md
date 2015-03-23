@@ -1,7 +1,7 @@
 ---
 layout: post
 title: HTML
-permalink: /code-standards/html
+permalink: /code-standards/html/
 ---
 
 # HTML

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: .NET
-permalink: /code-standards/dot-net
+permalink: /code-standards/dot-net/
 ---
 
 # .NET
