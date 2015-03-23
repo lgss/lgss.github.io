@@ -52,6 +52,16 @@ Further paragraphs come after blank lines.
 ### Tips
 * If it seems difficult to summarize what your commit does, it may be because it includes several logical changes or bug fixes, and are better split up into several commits using `git add -p`.
 
+## Branching and Merging
+
+* Projects should only have hosted environment branches
+	* env/dev
+	* env/stage
+	* env/production
+* Apart from environment branches, only branch locally
+* Pull requests should be used to merge code
+* No one merges their own code
+
 ## References
 The following blog post has a nice discussion of commit messages:
 
