@@ -58,9 +58,13 @@ Further paragraphs come after blank lines.
 	* env/dev
 	* env/stage
 	* env/production
+
 * Apart from environment branches, only branch locally
 * Pull requests should be used to merge code
+* Only make pull requests on env/dev
 * No one merges their own code
+* Hooks should complete the migration of code from dev -> stage
+* Production merges are completed manually
 
 ## References
 The following blog post has a nice discussion of commit messages:
