@@ -11,16 +11,40 @@
 }
 
 .pattern__title {
-	padding: $base-spacing-unit 0;
+	background-color: $ghost-gray;
+	margin: $base-spacing-unit/2 0;
+	padding: $base-spacing-unit/2;
 	.title {
 		margin: 0;
+		line-height: 1;
+		color: $manatee;
+
+		cursor: pointer;
+		
+		&:hover {
+			color: $black;
+		}
+
 		span {
 			font-size: .5em;
 		}	
 	}
 }
 
+.code {
+	margin-bottom: $base-spacing-unit;
+	padding: $base-spacing-unit/2 $base-spacing-unit;
+	overflow-x: scroll;
 
+	font-size: 15px;
+	
+	background-color: $whitesmoke;
+	border: 1px solid $geyser;
+
+	pre {
+		margin-bottom: 0;
+	}
+}
 /**
  * Color Swatches
  */
@@ -34,19 +58,31 @@
 	float: left;
 	width: 50%;
 
+	@media all and (min-width: 600px) {
+		width: 25%;
+		margin-bottom: 1em;
+	}
+
+	@media all and (min-width: 760px) {
+		width: 16.666667%;
+		margin-bottom: 1em;
+	}
 }
 
 .sg-swatch {
-	height: 4em;
+	height: 5em;
+	width: 5em;
+	margin: 0 auto 1em;
+	@include prefix(border-radius, 100%);
 }
 
 .sg-label {
+	text-align: center;
 	padding: .5em 0;
 }
-.sg-hex {
-	font-size: 80%;
-	font-style: italic;
 
+.sg-hex {
+	display: block;
 }
 
 .color-brand-primary {
@@ -92,3 +128,65 @@
 	background-color: $whitesmoke;
 }
 
+.color-ccc {
+	background-color: $ccc;
+}
+.color-ncc {
+	background-color: $ncc;
+}
+.color-hdc {
+	background-color: $hdc;
+}
+.color-nocc {
+	background-color: $nocc;
+}
+.color-nbc {
+	background-color: $nbc;
+}
+.color-nph {
+	background-color: $nph;
+}
+.color-ocs {
+	background-color: $ocs;
+}
+.color-nhft {
+	background-color: $nhft;
+}
+
+
+/**
+ * Grid pattern
+ */
+.example {
+	.g-column {
+	background-image: url(../images/grid.png);
+	min-height: 30px;
+	}
+}
+
+.sharepoint-header {
+	@include clearfix();
+
+	background-color: $brand-primary;
+	padding: .5em 1em;
+
+	a {
+		color: $white !important;
+	}
+}
+
+.sharepoint-navigation {
+	float: right;
+	@include clearfix();
+	
+	ul {margin:0;}
+
+	li {
+		float: left;
+		list-style-type: none;
+	}
+
+	a {
+		padding: .5em;
+	}
+}

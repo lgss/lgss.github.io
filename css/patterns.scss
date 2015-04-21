@@ -13,22 +13,29 @@
 @import "patterns/base/reset"; // reset things
 @import "patterns/base/box-sizing"; // reset things
 @import "patterns/base/shared"; // reset things
-// @import "patterns/base/layout";
+@import "patterns/base/layout";
+@import "patterns/base/grid";
 @import "patterns/base/typography";
 @import "patterns/base/links";
-// @import "patterns/base/buttons";
-// @import "patterns/base/forms";
+@import "patterns/base/buttons";
+@import "patterns/base/forms";
+
 
 //partials
-// @import "patterns/partials/alerts";
-// @import "patterns/partials/breadcrumbs";
+@import "patterns/partials/site-header";
+@import "patterns/partials/sidebar";
+@import "patterns/partials/sidebar-block";
+@import "patterns/partials/sidebar-guide";
+@import "patterns/partials/alerts";
+@import "patterns/partials/messages";
+@import "patterns/partials/breadcrumbs";
 // @import "patterns/partials/callout";
 // @import "patterns/partials/footer";
 // @import "patterns/partials/navigation";
-// @import "patterns/partials/panels";
+@import "patterns/partials/panels";
 // @import "patterns/partials/related-content";
 // @import "patterns/partials/story";
-// @import "patterns/partials/table";
+@import "patterns/partials/table";
 @import "patterns/partials/syntax-highlighting";
 
 // shame.scss

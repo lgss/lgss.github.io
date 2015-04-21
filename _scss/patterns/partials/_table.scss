@@ -19,5 +19,8 @@ table {
   	&.align-right {
   		text-align: right;
   	}
+    &.number {
+      text-align: right;
+    }
   }
 }

@@ -20,7 +20,9 @@
     display:inline-block;
   }
   li::after {
-    content:" / ";
+    content:">";
+    margin-left: 0.33em;
+    margin-right: 0.33em;
   }
   li:last-child::after{
     content:"";

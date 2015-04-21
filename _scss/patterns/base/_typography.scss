@@ -2,6 +2,7 @@ body {
   font-family: $font-family;
   font-size:100%;
   line-height: $base-line-height-ratio;
+  font-weight: 300;
 }
 
 /* Headings */
@@ -75,6 +76,12 @@ blockquote {
   @extend blockquote;
   border-left-color: $highlight;
 
+  p {
+    @extend .small-text;
+    color: $mine-shaft;
+    font-size: normal;  
+  }
+  
 }
 
 .small-text {
@@ -113,4 +120,5 @@ textarea,
 select,
 button {
   font-size: 16px; // make sure ios doesn't do that weird zooming thing on forms
+  font-family: $font-family;
 }

@@ -1,5 +1,6 @@
 label, legend {
-  //display: block;
+  display: block;
+  margin-bottom: $base-spacing-unit/4;
 }
 
 input[type="text"],
@@ -20,12 +21,23 @@ textarea,
 select {
   border-width: 2px;
   border-style: solid;
-  border-color: $brand-primary;
+  border-color: $geyser;
   font-size: 16px; // magic number for iOS to not do stupid things to forms
   line-height: 1;
-  //padding:8px;
+  padding:$base-spacing-unit/4;
   margin: 0;
   width: 100%;
+
+  &.is-error {
+    border-color: $fail;
+  }
+
+  &:focus {
+    outline-color: $highlight;
+    outline-style: solid;
+    outline-width: 3px;
+  }
+
 }
 
 fieldset {
@@ -43,9 +55,47 @@ fieldset {
   position: relative;
 
   input[type="text"] {}
-  input[type="submit"] {}
+  input[type="submit"] {
+    @extend .button;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 3em;
+
+    background-image: url(../images/lgss-icon-search.png);
+    background-repeat: no-repeat;
+    background-position: center;
+
+    text-indent: -9999px;
+  }
 }
 
 input[type="text"].filter{
   border-color:$geyser;
+  margin-bottom: $base-spacing-unit;
+}
+
+
+.search--home {
+
+  padding: $base-spacing-unit*1.5 $base-spacing-unit/2;
+  background-color: $brand-primary;
+  color: $white;
+
+  h3 {
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: $base-spacing-unit/4;
+  }
+
+  input[type="submit"] {
+    @extend .button--secondary;
+  }
+
+  .hint {
+    font-size: 80%;
+    margin-bottom: 0;
+    margin-top: 1em;
+  }
 }

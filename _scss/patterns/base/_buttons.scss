@@ -1,0 +1,91 @@
+button, .button {
+	/**
+ * 1. Allow us to style box model properties.
+ * 2. Line different sized buttons up a little nicer.
+ * 3. Make buttons inherit font styles (often necessary when styling `input`s as
+ *    buttons).
+ * 4. Reset/normalize some styles.
+ * 5. Force all button-styled elements to appear clickable.
+ * 6. Fixes odd inner spacing in IE7.
+ * 7. Subtract the border size from the padding value so that buttons do not
+ *    grow larger as we add borders.
+ */
+	display: inline-block; /* [1] */
+    vertical-align: middle; /* [2] */
+    font: inherit; /* [3] */
+    text-align: center; /* [4] */
+    margin:  0; /* [4] */
+    cursor: pointer; /* [5] */
+    overflow: visible; /* [6] */
+    padding: $base-spacing-unit/4; /* [7] */
+    background-color: $brand-primary;
+    border: none;
+    border-bottom-width: 2px; 
+    border-bottom-style: solid;
+    border-bottom-color: darken($brand-primary,10%);
+    color: $white;
+    text-decoration: none;
+
+    &:hover {
+    	color: $white;
+    	background-color: darken($brand-primary, 10%);
+    }
+
+    &:focus {
+    	outline: 3px solid $highlight;
+	}
+
+	&:visited {
+		color: $white;
+	}
+
+	+ p {
+		margin-top: 1em;
+	}
+}
+
+.button--secondary {
+	@extend .button;
+	background-color: $brand-secondary;
+	border-bottom-color: darken($brand-secondary,10%);
+
+	&:hover {
+		background-color: darken($brand-secondary,10%);
+	}
+}
+
+.button--alt {
+	@extend .button;
+	background-color: $brand-alt;
+}
+
+.button--task {
+	@extend .button;
+	position: relative;
+	height: 8em;
+	width: 11em;
+	padding: 0;
+	margin: inherit;
+	background-image: url('../images/lgss-bg-task.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 130%;
+	p {
+		position: absolute;
+		bottom: 1em;
+		right: 1em;
+		height: 3em;
+		width: 8em;
+		text-align: right;
+		margin: 0;
+	}
+}
+
+.button-group {
+	margin-left: $grid-gutter*-1;
+	.button {
+		margin-left: $grid-gutter;
+		margin-bottom: 1.5em;
+	}
+}
+

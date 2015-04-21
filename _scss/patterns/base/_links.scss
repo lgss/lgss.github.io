@@ -5,7 +5,7 @@ a {
 		color: darken($brand-primary,10%);
 	}
 	&:visited {
-		color: darken($brand-secondary,10%);
+		color: darken($brand-primary,10%);
 	}
 	&:focus {
 		background-color: $highlight;
