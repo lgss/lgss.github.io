@@ -1,0 +1,55 @@
+.site-header {
+	background: $ghost-gray;
+
+	padding-bottom: 1em;
+	padding-top: 1em;
+
+	padding-left: 1em;
+	padding-right: 1em;
+
+	border-bottom-width: ($base-spacing-unit/4);
+	border-bottom-style: solid;
+	border-bottom-color: $manatee;
+
+	@media all and (min-width:600px) {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	@media all and (min-width:760px){
+		padding-bottom: 2em;
+		padding-top: 2em;
+	}
+
+}
+
+.site-logo {
+
+	margin-bottom: 1em;
+
+	@media all and (min-width:600px){
+		display: inline-block;
+
+		margin-bottom: 0;
+		margin-right: $grid-gutter;
+
+		width: 33.333333%;
+	}
+
+	@media all and (min-width:760px){
+		width: 16.6666667%;
+		margin-right: 16.6666667% + 33.3333333%;
+	}
+}
+
+.site-search {
+	@media all and (min-width:600px){
+		display: inline-block;
+		width: 66.666667% - $grid-gutter;
+	}
+
+	@media all and (min-width:760px){
+		display: inline-block;
+		width: 33.333333%;
+	}
+}

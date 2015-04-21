@@ -1,0 +1,16 @@
+.block--guide{
+
+	@extend .block;
+
+	background-color: $sidebar-block;
+
+	color: $white;
+
+	a {
+		color: $white;
+	}
+
+	ol {
+		color: $white;
+	}
+}
