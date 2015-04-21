@@ -3,24 +3,20 @@
 ---
 // variables
 @import "variables";
-
 //utils
 @import "patterns/utils/placeholders";
 @import "patterns/utils/mixins";
-
 //base
-@import "patterns/base/normalize"; // reset things
-@import "patterns/base/reset"; // reset things
-@import "patterns/base/box-sizing"; // reset things
-@import "patterns/base/shared"; // reset things
+@import "patterns/base/normalize";
+@import "patterns/base/reset";
+@import "patterns/base/box-sizing";
+@import "patterns/base/shared";
 @import "patterns/base/layout";
 @import "patterns/base/grid";
 @import "patterns/base/typography";
 @import "patterns/base/links";
 @import "patterns/base/buttons";
 @import "patterns/base/forms";
-
-
 //partials
 @import "patterns/partials/site-header";
 @import "patterns/partials/sidebar";
@@ -37,6 +33,5 @@
 // @import "patterns/partials/story";
 @import "patterns/partials/table";
 @import "patterns/partials/syntax-highlighting";
-
 // shame.scss
 @import "patterns/shame";
