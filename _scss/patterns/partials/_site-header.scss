@@ -1,55 +1,62 @@
 .site-header {
+	@include clearfix();
+
 	background: $ghost-gray;
 
-	padding-bottom: 1em;
-	padding-top: 1em;
+	padding-bottom: 2em;
+	padding-top: 2em;
 
-	padding-left: 1em;
-	padding-right: 1em;
+	padding-left: 0;
+	padding-right: 0;
 
 	border-bottom-width: ($base-spacing-unit/4);
 	border-bottom-style: solid;
 	border-bottom-color: $manatee;
 
-	@media all and (min-width:600px) {
-		padding-left: 0;
-		padding-right: 0;
+	@media all and (max-width:760px){
+		padding-bottom: 1em;
+		padding-top: 1em;
 	}
 
-	@media all and (min-width:760px){
-		padding-bottom: 2em;
-		padding-top: 2em;
+	@media all and (max-width: $max-page-width){
+		padding-left: $grid-gutter;
+		padding-right: $grid-gutter;
 	}
 
 }
 
 .site-logo {
+	float: left;
+	width: 16.6666667%;
+	margin-right: 16.6666667% + 33.333333% + $grid-gutter-half;
 
-	margin-bottom: 1em;
-
-	@media all and (min-width:600px){
-		display: inline-block;
-
-		margin-bottom: 0;
-		margin-right: $grid-gutter;
-
-		width: 33.333333%;
+	@media all and (max-width:$max-page-width){
+		width: 22%;
+		margin-right: 11.3333333% + $grid-gutter-half + 33.333333%;
 	}
 
-	@media all and (min-width:760px){
-		width: 16.6666667%;
-		margin-right: 16.6666667% + 33.3333333%;
+	@media all and (max-width:760px){
+		width: 25%;
+		margin-right: 8.3333333% + $grid-gutter-half;
 	}
+
+	@media all and (max-width:600px){
+		margin-bottom: 1em;
+		margin-right: 0;
+		width: 100%;
+	}
+
 }
 
 .site-search {
-	@media all and (min-width:600px){
-		display: inline-block;
-		width: 66.666667% - $grid-gutter;
+	float: left;
+	width: 33.3333333% - $grid-gutter-half;
+
+	@media all and (max-width:760px){
+		width: 66.6666667% - $grid-gutter-half;
 	}
 
-	@media all and (min-width:760px){
-		display: inline-block;
-		width: 33.333333%;
+	@media all and (max-width: 600px){
+		width: 100%;
 	}
 }

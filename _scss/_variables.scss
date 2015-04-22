@@ -58,4 +58,5 @@ $font-family-alt: 'Helvetica',Tahoma,sans-serif;
 $max-page-width: 1026px;
 $grid-gutter-base: $base-font-size*2;
 $grid-gutter: percentage($grid-gutter-base/$max-page-width);
+$grid-gutter-half: $grid-gutter/2;
 $base-spacing-unit: $base-font-size*2;
