@@ -56,16 +56,16 @@
 
 .sg-color {
 	float: left;
-	width: 50%;
+	width: 16.666667%;
+	
+	
 
-	@media all and (min-width: 600px) {
+	@media all and (max-width: 760px) {
 		width: 25%;
-		margin-bottom: 1em;
 	}
 
-	@media all and (min-width: 760px) {
-		width: 16.666667%;
-		margin-bottom: 1em;
+	@media all and (max-width: 600px) {
+		width: 50%;	
 	}
 }
 
