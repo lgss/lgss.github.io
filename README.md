@@ -2,6 +2,8 @@
 
 This manual is a work in progress and intends to set out the foundations of how we work as an LGSS team.
 
+It is hosted via Github Pages [here](http://lgss.github.io)
+
 ## Contribute
 
 Feel free to contribute to the manual by forking the repo and submitting changes via pull request.
