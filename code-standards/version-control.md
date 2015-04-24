@@ -20,7 +20,7 @@ Good commit messages serve at least three important purposes:
 
 Structure your commit message like this:
 
-From: [[http://git-scm.com/book/ch5-2.html]]
+From: [http://git-scm.com/book/ch5-2.html](http://git-scm.com/book/ch5-2.html)
 <pre>
 Short (50 chars or less) summary of changes
 
@@ -42,7 +42,7 @@ Further paragraphs come after blank lines.
 
 ### Do
 
-* Write the summary line and description of what you have done in the imperative mode, that is as if you were commanding someone. Write "fix", "add", "change" instead of "fixed", "added", "changed".
+* Write the summary line and description of what you have done in the imperative mode, that is as if you were commanding someone. Write "fix", "add", "change" instead of "fixed", "added", "changed" as this reads well during the build process
 * Always leave the second line blank.
 * Line break the commit message (to make the commit message readable without having to scroll horizontally in `gitk`).
 
@@ -69,4 +69,4 @@ Further paragraphs come after blank lines.
 ## References
 The following blog post has a nice discussion of commit messages:
 
-"On commit messages":http://who-t.blogspot.com/2009/12/on-commit-messages.html
+["On commit messages"](http://who-t.blogspot.com/2009/12/on-commit-messages.html):[http://who-t.blogspot.com/2009/12/on-commit-messages.html](http://who-t.blogspot.com/2009/12/on-commit-messages.html)
