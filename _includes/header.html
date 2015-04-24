@@ -2,7 +2,7 @@
   <div class="sharepoint-header">
       <a href="{{ site.baseurl }}/">{{ site.title }}</a>
   
-  <div class="sharepoint-navigation">
+    <div class="sharepoint-navigation">
       <nav role="navigation">
           <ul>{% for page in site.pages %}
               {% if page.title %}<li>
@@ -10,8 +10,9 @@
             </li>{% endif %}{% endfor %}
           </ul>
       </nav>
+    </div>
   </div>
-  </div>
+
   {{ site.patterns | where:"title" : "Standard Header" }}
   
 </header>
