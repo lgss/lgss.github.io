@@ -8,7 +8,7 @@ permalink:           pretty
 relative_permalinks: false
 
 # Setup
-title:               "LGSS | Dev Manual"
+title:               "LGSS | Service Manual"
 url:                 http://lgss.github.io
 baseurl:             
 destination:        _site
