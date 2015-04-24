@@ -8,6 +8,10 @@ It is hosted via Github Pages [here](http://lgss.github.io)
 
 Feel free to contribute to the manual by forking the repo and submitting changes via pull request.
 
+### Issues
+
+[Add an issue](https://github.com/lgss/lgss.github.io/issues) if you find something that needs fixing or updating
+
 ## Coding Standards
 
 Coding standards outline how we write code so that it's consistent and easy to jump in and out of projects. 
