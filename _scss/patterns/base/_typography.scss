@@ -72,6 +72,12 @@ blockquote {
 
 }
 
+dl {
+  dd {
+    font-style: italic;
+  }
+}
+
 .callout {
   @extend blockquote;
   border-left-color: $highlight;
