@@ -1,10 +1,19 @@
-# LGSS Dev Manual
+# LGSS Service Manual
+
+This manual is a work in progress and intends to set out the foundations of how we work as an LGSS team.
+
+## Contribute
+
+Feel free to contribute to the manual by forking the repo and submitting changes via pull request.
 
 ## Coding Standards
 
-// to be written
+Coding standards outline how we write code so that it's consistent and easy to jump in and out of projects. 
 
-To include
+Sticking to coding standards isn't about making it more difficult to write code, it's about making it easier to share the load. With consistent patterns we save time when working on multiple projects at the same time, removing learning curve that is project structure and code patterns.
+
+We're aiming to have standards for:
+
 * HTML
 * CSS
 * JavaScript
@@ -12,13 +21,19 @@ To include
 * Sharepoint
 * Java
 * Version Control
++ any other tech that becomes part of the standard stack
 
-## Using LGSS Styleguide
+## Styleguide
 
+The styleguide is designed to keep the experience of LGSS products consistent throughout, ideally it'll be migrated to its own module as a living styleguide that can be included as part of web projects but for now, it lays out how things should look and function.
+
+### CSS/SASS
+
+The CSS is written in SASS, more about why and how will appear on the CSS standards page.
 
 ### The bare minimum
 ```
-<link rel="stylesheet" href="//lgss.github.io/styleguide/0.1/css/patterns.css">
+<link rel="stylesheet" href="//lgss.github.io/css/patterns.css">
 ```
 
 ### Also recommended
@@ -28,21 +43,10 @@ Modernizr is included for old browsers that need a helping hand.
 ```
 
 ## Local Setup
-LGSS Patterns uses <a href="http://jekyllrb.com/">Jekyll</a> to generate pattern files.
+LGSS Service Manual uses <a href="http://jekyllrb.com/">Jekyll</a> to generate pattern files.
 
 1. Install Jekyll <code>$ gem install jekyll</code>  
-2. Clone this repository
+2. Fork & clone this repository
 3. cd into the patterns directory
 4. Run: <code>$ jekyll serve --baseurl ''</code>
 5. Navigate to <code>http://localhost:4000</code>
-
-
-## Versioning
-LGSS Patterns will be maintained under the Semantic Versioning guidelines as much as possible. Releases will be numbered with the following format:
-
-{major}.{minor}.{patch}
-
-###Guidelines
-1. Breaking backward compatibility bumps the major (and resets the minor and patch)
-2. New patterns (without breaking backward compatibility) bumps the minor (and resets the patch)
-3. Bug fixes and misc changes bumps the patch
