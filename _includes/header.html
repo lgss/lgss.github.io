@@ -4,7 +4,10 @@
   
     <div class="sharepoint-navigation">
       <nav role="navigation">
-          <ul>{% for page in site.pages %}
+          <div class="menu-btn js-menu-btn">
+    <a href="#menu" class="button--secondary icon-caret-down"><span>Menu</span></a>
+          </div>
+          <ul class="js-menu">{% for page in site.pages %}
               {% if page.title %}<li>
               <a href="{{ page.url | prepend: site.baseurl }}" title="{{ page.title }}">{{ page.title }}</a>
             </li>{% endif %}{% endfor %}

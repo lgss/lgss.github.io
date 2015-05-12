@@ -176,10 +176,13 @@
 }
 
 .sharepoint-navigation {
-	float: right;
 	@include clearfix();
+	float: right;
 	
-	ul {margin:0;}
+	ul {
+		@include clearfix();
+		margin:0;
+	}
 
 	li {
 		float: left;
@@ -188,5 +191,40 @@
 
 	a {
 		padding: .5em;
+	}
+
+	@media all and (max-width:600px){
+		ul {
+			max-height: 0;
+			overflow: hidden;
+			@include prefix(transition, all .2s ease-in-out);
+			&.is-open {
+				max-height: 600px;
+			}
+		}
+
+		li {
+			display: block;
+			width: 100%;
+		}
+		a {
+			display: block;
+			text-align: right;
+		}
+
+		
+	}
+}
+
+.menu-btn {
+	@include clearfix();
+	display: none; /* for IE8 and above */
+
+	@media all and  (max-width: 600px) {
+
+		display: block;
+		> a {
+			float: right;
+		}
 	}
 }
