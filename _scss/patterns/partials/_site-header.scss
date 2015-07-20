@@ -25,6 +25,16 @@
 
 }
 
+.site-header--light {
+	@extend .site-header;
+	background: $white;
+}
+
+.site-header--dark {
+	@extend .site-header;
+	background: $manatee;
+}
+
 .site-logo {
 	float: left;
 	width: 16.6666667%;
