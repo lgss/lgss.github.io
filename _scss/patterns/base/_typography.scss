@@ -1,7 +1,11 @@
+html {
+    font-size: 100%;
+}
+
 body {
   font-family: $font-family;
-  font-size:100%;
   line-height: $base-line-height-ratio;
+  @include rem-fallback(font-size, $base-font-size);
   font-weight: 300;
 }
 
@@ -19,45 +23,45 @@ h6, .h6 {
 
 h1, .h1{
   padding:0;
-  margin-top: $base-line-height;
-  margin-bottom: $base-line-height;
-  font-size: $h1-font-size;
+  @include rem-fallback(margin-top,$base-font-size);
+  @include rem-fallback(margin-bottom,$base-font-size);
+  @include rem-fallback(font-size,$h1-font-size);
 }
 
 h2, .h2 {
   padding:0;
-  margin-bottom: $base-line-height;
-  margin-top: $base-line-height;
-  font-size:$h2-font-size;
+  @include rem-fallback(margin-top,$base-font-size);
+  @include rem-fallback(margin-bottom,$base-font-size);
+  @include rem-fallback(font-size,$h2-font-size);
 }
 h3, .h3{
-  margin-bottom: $base-line-height;
-  margin-top: $base-line-height;
-  font-size:$h3-font-size;
+  @include rem-fallback(margin-top,$base-font-size);
+  @include rem-fallback(margin-bottom,$base-font-size);
+  @include rem-fallback(font-size,$h3-font-size);
 }
 h4, .h4{
-  font-size:$h4-font-size;
+  @include rem-fallback(font-size,$h4-font-size);
 }
 h5, .h5{
-  font-size:$h5-font-size;
+  @include rem-fallback(font-size,$h5-font-size);
 }
 h6, .h6{
-  font-size:$h6-font-size;
+  @include rem-fallback(font-size,$h6-font-size);
 }
 
 /*paragraphs*/
 p {
-  font-size: $base-font-size;
-  margin: 0 0 1em;
+  @include rem-fallback(font-size, $base-font-size);
+  @include rem-fallback(margin-bottom,$base-font-size);
   line-height: $base-line-height-ratio;
 
   &.intro {
-    font-size: $base-font-size * 1.15;
+    @include rem-fallback(font-size, $base-font-size*1.15);
   }
 }
 
 blockquote {
-  padding-left: 1em;
+  @include rem-fallback(padding-left,$base-font-size);
 
   border-left-color: $brand-secondary;
   border-left-style: solid;
@@ -67,7 +71,7 @@ blockquote {
   color: $manatee;
 
   p {
-    margin: 0 0 1em 0;
+    @include rem-fallback(margin-bottom, $base-font-size);
   }
 
 }
@@ -125,6 +129,6 @@ input[type="color"],
 textarea,
 select,
 button {
-  font-size: 16px; // make sure ios doesn't do that weird zooming thing on forms
+  @include rem-fallback(font-size,16); // make sure ios doesn't do that weird zooming thing on forms
   font-family: $font-family;
 }

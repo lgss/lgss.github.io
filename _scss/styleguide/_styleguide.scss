@@ -7,13 +7,13 @@
  * Pattern wrappers
  */
 .pattern {
-	margin-bottom: 3em;
+	@include rem-fallback(margin-bottom, $base-font-size*3);
 }
 
 .pattern__title {
 	background-color: $ghost-gray;
-	margin: $base-spacing-unit/2 0;
-	padding: $base-spacing-unit/2;
+	@include rem-fallback(margin, $base-font-size/2, 0);
+	@include rem-fallback(padding, $base-font-size/2);
 	.title {
 		margin: 0;
 		line-height: 1;
@@ -26,17 +26,17 @@
 		}
 
 		span {
-			font-size: .5em;
+			@include rem-fallback(font-size, $base-font-size/2);
 		}	
 	}
 }
 
 .code {
-	margin-bottom: $base-spacing-unit;
-	padding: $base-spacing-unit/2 $base-spacing-unit;
+	@include rem-fallback(margin-bottom, $base-font-size);
+	@include rem-fallback(padding, $base-font-size/2, $base-font-size);
 	overflow-x: scroll;
 
-	font-size: 15px;
+	@include rem-fallback(font-size, 15);
 	
 	background-color: $whitesmoke;
 	border: 1px solid $geyser;

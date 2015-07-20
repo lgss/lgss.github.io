@@ -1,6 +1,6 @@
 label, legend {
   display: block;
-  margin-bottom: $base-spacing-unit/4;
+  @include rem-fallback(margin-bottom, $base-spacing-unit/4);
 }
 
 input[type="text"],
@@ -24,7 +24,7 @@ select {
   border-color: $geyser;
   font-size: 16px; // magic number for iOS to not do stupid things to forms
   line-height: 1;
-  padding:$base-spacing-unit/4;
+  @include rem-fallback(padding,$base-spacing-unit/4);
   margin: 0;
   width: 100%;
 
@@ -61,7 +61,7 @@ fieldset {
     right: 0;
     top: 0;
     height: 100%;
-    width: 3em;
+    @include rem-fallback(width, $base-spacing-unit*1.5);
 
     background-image: url(../images/lgss-icon-search.png);
     background-repeat: no-repeat;
@@ -79,14 +79,14 @@ input[type="text"].filter{
 
 .search--home {
 
-  padding: $base-spacing-unit*1.5 $base-spacing-unit/2;
+  @include rem-fallback(padding, $base-spacing-unit, $base-spacing-unit/2);
   background-color: $brand-primary;
   color: $white;
 
   h3 {
     font-weight: normal;
     margin-top: 0;
-    margin-bottom: $base-spacing-unit/4;
+    @include rem-fallback(margin-bottom, $base-spacing-unit/4);
   }
 
   input[type="submit"] {

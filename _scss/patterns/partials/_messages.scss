@@ -3,7 +3,7 @@
 	border-color: darken($ghost-gray,20%);
 	border-width: 1px;
 	border-style: solid;
-	padding: $base-spacing-unit/2;
+	@include rem-fallback(padding, $base-spacing-unit/2);
 }
 
 .site-message--success {

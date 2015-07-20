@@ -2,7 +2,7 @@
   border:1px solid $geyser;
   background:$white;
   width:100%;
-  padding: $base-font-size/2;
+  @include rem-fallback(padding, $base-font-size/2);
   a {
     border: 0;
   }
@@ -18,15 +18,15 @@
 }
 
 .media__media {
-  margin-bottom: 1em;
+  @include rem-fallback(margin-bottom, $base-font-size);
 }
 .media__body {
   .title {
     color: $brand-primary;
     margin-top: 0;
-    margin-bottom: .15em;
+    @include rem-fallback(margin-bottom, $base-font-size/2);
   }
   p {
-    font-size: 16px;
+    @include rem-fallback(font-size, 16);
   }
 }

@@ -2,7 +2,7 @@
   @extend %group;
   background-color: $ghost-gray;
   border: 1px solid $geyser;
-  padding: 1.5em;
+  @include rem-fallback(padding, $base-spacing-unit/2);
   //word-wrap: break-word;
   //removing break-word because apparently this randomly adds extra space to the bottom of pages in which panel is the last div before the footer. No idea what is going on here.
   /*@media #{$small-only} {

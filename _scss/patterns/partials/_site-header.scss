@@ -3,24 +3,24 @@
 
 	background: $ghost-gray;
 
-	padding-bottom: 2em;
-	padding-top: 2em;
+	@include rem-fallback(padding-bottom, $base-spacing-unit);
+	@include rem-fallback(padding-top, $base-spacing-unit);
 
 	padding-left: 0;
 	padding-right: 0;
 
-	border-bottom-width: ($base-spacing-unit/4);
+	@include rem-fallback(border-bottom-width, $base-font-size/2);
 	border-bottom-style: solid;
 	border-bottom-color: $manatee;
 
 	@media all and (max-width:760px){
-		padding-bottom: 1em;
-		padding-top: 1em;
+		@include rem-fallback(padding-bottom, $base-spacing-unit/2);
+		@include rem-fallback(padding-top, $base-spacing-unit/2);
 	}
 
 	@media all and (max-width: $max-page-width){
-		padding-left: $grid-gutter;
-		padding-right: $grid-gutter;
+		@include rem-fallback(padding-left, $grid-gutter);
+		@include rem-fallback(padding-right, $grid-gutter);
 	}
 
 }
