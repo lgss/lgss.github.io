@@ -46,6 +46,10 @@ button, .button {
 .button--alt {
 	@extend .button;
 	background-color: $brand-alt;
+	border-bottom-color: darken($brand-alt,10%);
+	&:hover {
+		background-color: darken($brand-alt,10%);
+	}
 }
 
 .button--task {
